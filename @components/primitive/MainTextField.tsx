@@ -6,11 +6,11 @@ const MainTextField = () => {
     const [text, setText] = React.useState("")
 
     return(
-        <TextInput label="Escribe aquí tu lista de la compra"
+        <TextInput label="Escribe aquí"
         value={text}
         onChangeText={text => setText(text)}
         multiline={true}
-        style={{height: "50%"}} />
+        style={{height: "100%", width: "100%"}} />
     )
 };
 
