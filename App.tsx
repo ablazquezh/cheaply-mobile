@@ -10,16 +10,17 @@ export default function App() {
   return (
     <PaperProvider>
 
-      <View style={styles.container}>
-          
-          <TopBar />
-          
-          <Main />
-          <StatusBar style="auto" />
-          
-          <BottomBar />
-      </View>
-      
+      <TopBar />
+
+        <View style={styles.container}>
+            
+            <Main />
+            <StatusBar style="auto" />
+            
+        </View>
+        
+      <BottomBar />
+
     </PaperProvider>
   );
 }
@@ -30,5 +31,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    paddingTop: 64
   },
 });
